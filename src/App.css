@@ -1,0 +1,125 @@
+.Cover {
+  height: 110vh;
+  background: url(./asset/doctor.jpg);
+  background-size: cover;
+}
+
+.banner {
+  content: "";
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.movie-search {
+  width: 20rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(7, 7, 7);
+}
+
+.Register {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Register h2 {
+  color: rgb(248, 71, 71);
+  margin-bottom: 2rem;
+}
+.Register p {
+  color: rgb(104, 103, 103);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.registerButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.registerForm {
+  width: 30rem;
+}
+
+.Login {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Login h2 {
+  color: rgb(248, 71, 71);
+  margin-bottom: 2rem;
+}
+.Login p {
+  color: rgb(104, 103, 103);
+  margin-top: 1rem;
+}
+
+.buttonLogin {
+  margin-right: 1rem;
+}
+
+.loginForm {
+  width: 30rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.inputLoginEmail {
+  padding: 0.4rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+  width: 30rem;
+  border-radius: 6px;
+}
+
+.inputLoginPassword {
+  padding: 0.4rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.5rem;
+  width: 30rem;
+  border-radius: 6px;
+}
+.loginForm label {
+  font-size: 1.3rem;
+  display: flex;
+  align-self: flex-start;
+}
+.radioButton {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+
+.signInGoogle {
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnSignInGoogle {
+  box-shadow: 0 0px 5px 0 rgb(0, 0, 0, 0.2);
+  font-weight: 600;
+  border-color: white;
+  background-color: white;
+  color: rgb(75, 75, 75);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
