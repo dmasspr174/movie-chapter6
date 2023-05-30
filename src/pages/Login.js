@@ -52,7 +52,7 @@ function Login() {
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
-        <div className="radioButton">
+        <div className="radioButton mb-4">
           <input
             className="me-2"
             type="checkbox"
