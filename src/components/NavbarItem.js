@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getProfile, logout } from "../redux/action/auth";
 import { searchMovie } from "../redux/action/post";
+import { setPosts } from "../redux/reducers/post";
 
 function NavbarItem() {
   const dispatch = useDispatch();
@@ -20,7 +21,8 @@ function NavbarItem() {
   const search = async (q) => {
     if (q.length > 3) {
       const query = await searchMovie(q);
-      dispatch(query.results);
+      dispatch(setPosts(query.results));
+      console.log({ query: query });
     }
   };
 

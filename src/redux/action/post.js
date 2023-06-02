@@ -20,26 +20,11 @@ export const getPosts = () => async (dispatch) => {
   }
 };
 
-// export const searchMovie = async (q) => {
-//   const search = await axios.get(
-//     `${baseUrl}/search/movie?query=${q}&api_key=${apiKey}`
-//   );
-//   return search.data;
-// };
-
-export const searchMovie = (q) => async (dispatch) => {
-  try {
-    const response = await axios.get(
-      `${baseUrl}/search/movie?query=${q}&api_key=${apiKey}`
-    );
-    dispatch(setPosts(response.data));
-  } catch (error) {
-    if (axios.isAxiosError(error)) {
-      toast.error(error?.response?.data?.message);
-      return;
-    }
-    toast.error(error?.message);
-  }
+export const searchMovie = async (q) => {
+  const search = await axios.get(
+    `${baseUrl}/search/movie?query=${q}&api_key=${apiKey}`
+  );
+  return search.data;
 };
 
 export const getPostDetails = (id) => async (dispatch) => {
